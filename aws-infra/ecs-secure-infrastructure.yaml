@@ -200,9 +200,13 @@ Resources:
 
   DevCluster:
     Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName: dev-cluster
 
   StagingCluster:
     Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName: staging-cluster
   
   TaskExecutionRole:
     Type: AWS::IAM::Role
